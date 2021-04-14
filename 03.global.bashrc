@@ -16,6 +16,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export ENV=dev
 export PATH=$PATH:/usr/local/src/bin:/usr/local/sbin:/usr/local/opt/ruby/bin
+export GPG_TTY=$(tty)
 
 # bash:
 #set show-all-if-ambiguous on

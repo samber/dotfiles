@@ -10,6 +10,8 @@ alias rebase='git rebase -i '
 alias commit='git commit -m '
 alias fix='git commit -m fix'
 alias oops='git commit -m oops'
+alias merge='git commit -m merge'
+alias debug='git commit -m debug'
 alias git='hub'
 
 export PATH=${PATH}:${HOME}/lib/vsts-cli/bin

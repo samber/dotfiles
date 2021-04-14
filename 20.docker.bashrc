@@ -22,6 +22,10 @@ function docker_pg() {
   echo -n 'Database: '
   read PG_DB
 
+  echo
+  echo 'Client => ' psql postgres://${PG_USER}:${PG_PASS}@localhost:5432/${PG_DB}
+  echo
+
   docker run --rm -it -p 5432:5432 -e POSTGRES_USER=${PG_USER} -e POSTGRES_PASSWORD=${PG_PASS} -e POSTGRES_DB=${PG_DB} --name postgres postgres:latest
 }
 
@@ -32,6 +36,10 @@ function docker_mysql() {
   read MYSQL_PASSWORD
   echo -n 'Database: '
   read MYSQL_DATABASE
+
+  echo
+  echo 'Client => ' mysql -u ${MYSQL_USER} -p${MYSQL_PASSWORD} -h 127.0.0.1 ${MYSQL_DATABASE}
+  echo
 
   docker run --rm -it -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true -e MYSQL_USER=${MYSQL_USER} -e MYSQL_PASSWORD=${MYSQL_PASSWORD} -e MYSQL_DATABASE=${MYSQL_DATABASE} --name mysql mysql:latest --default-authentication-plugin=mysql_native_password
 }

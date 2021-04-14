@@ -98,3 +98,7 @@ export YSU_MODE=BESTMATCH
 #PROMPT='$(_user_host)${_current_dir} $(git_prompt_info) %{$fg[$CARETCOLOR]%}▶%{$resetcolor%} '
 
 unsetopt share_history
+
+# added 2020-09-15
+autoload bashcompinit && bashcompinit
+source /usr/local/etc/bash_completion.d/az

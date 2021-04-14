@@ -148,3 +148,13 @@ function swap() {
 #        echo "'$1' is not a valid file!"
 #    fi
 #}
+
+function watermark_identity_card() {
+  if [ $# -neq 3 ]
+  then
+    echo "usage: watermark_identity_card <text> <source> <destination>" >&2
+    return
+  fi
+
+  convert -density 150 -fill  "rgba(255,0,0,0.25)"  -gravity Center -pointsize 80 -draw "rotate -45 text 0,0 \"$1\"" "$2" "$3"
+}

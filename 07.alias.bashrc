@@ -29,6 +29,7 @@ alias ne='emacs'
 #alias ls='ls --color'
 alias ping="ping -c 9999999"  # overrides systemadmin oh-my-zsh plugin
 alias power="system_profiler SPPowerDataType"
+alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/"
 
 #alias sound='tput bel'
 
