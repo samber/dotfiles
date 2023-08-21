@@ -1,0 +1,74 @@
+[init]
+  defaultBranch = main
+
+[alias]
+  co = checkout
+  b = branch
+  s = status
+  st = status
+  a = add
+  c = commit
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  cont = rebase --continue
+
+[user]
+	email = dev@samuel-berthe.fr
+	name = Samuel Berthe
+	signingkey = DD7CC11339B5E119AFCDDB7A64863511FFBD0E3C
+[credential]
+	helper = osxkeychain
+[commit]
+	gpgSign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+# [fetch]
+#   prune = true
+[apply]
+  whitespace = nowarn
+[pull]
+	rebase = false
+[push]
+  autoSetupRemote = true
+#[url "https://"]
+#	insteadOf = git://
+
+[color "diff"]
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+	newMoved = cyan dim
+	oldMoved = blue dim
+	newMovedAlternative = cyan italic
+	oldMovedAlternative = blue italic
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = cyan
+
+# correct typos
+[help]
+	autocorrect = 1
+
+# faster git server communication.
+# like a LOT faster. https://opensource.googleblog.com/2018/05/introducing-git-protocol-version-2.html
+[protocol]
+	version = 2
+
+[rebase]
+  autoStash = true
