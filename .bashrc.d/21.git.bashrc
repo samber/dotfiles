@@ -59,7 +59,7 @@ function trigger_vsts_build() {
 }
 
 function github() {
-   open https://github.com/$(git remote -v | grep origin | sed 's#.*git@github.com:##g' | sed 's#.git.*##g' | head -n1)
+   open https://github.com/$(git remote -v | grep origin | sed 's#.*github.com.##g' | sed 's#.git.*##g' | head -n1)
 }
 
 function ci() {

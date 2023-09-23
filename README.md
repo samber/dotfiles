@@ -27,6 +27,7 @@ ln -s /Users/samber/.dotfiles/.oh-my-zsh/custom /Users/samber/.oh-my-zsh/custom
 ln -s /Users/samber/.dotfiles/.bashrc.d
 ln -s /Users/samber/.dotfiles/.zshrc
 ln -s /Users/samber/.dotfiles/.gitconfig
+ln -s /Users/samber/.dotfiles/.tmux.conf
 ln -s /Users/samber/.dotfiles/.emacs
 ln -s /Users/samber/.dotfiles/.emacs.d
 ln -s /Users/samber/.dotfiles/.config/karabiner/karabiner.json /Users/samber/.config/karabiner/karabiner.json
