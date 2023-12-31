@@ -34,7 +34,7 @@
 [apply]
   whitespace = nowarn
 [pull]
-	rebase = false
+	rebase = true
 [push]
   autoSetupRemote = true
 #[url "https://"]
