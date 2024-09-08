@@ -4,7 +4,7 @@ alias reg='docker run --rm -it jess/reg --registry https://index.docker.io --use
 alias fig='docker-compose'
 alias d='docker'
 alias dm='docker-machine'
-alias debian='docker run --rm -it -v $(pwd):/app --workdir=/app golang:1.21-bullseye bash'
+alias debian='docker run --rm -it -v $(pwd):/app --workdir=/app golang:1.23-bookworm bash'
 alias fedora='docker run --rm -it -v $(pwd):/app -w /app epitechcontent/epitest-docker /bin/bash'
 alias fedora-gui='docker run --rm -it -v $(pwd):/app -w /app -p 5900-6000:5900-6000 samber/epitech-gui /bin/bash'
 #[[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh"
@@ -50,3 +50,6 @@ function fig_reset() {
   fig up -d $1
   fig logs -f $1
 }
+
+# required for kubectl tmux-exec
+export GNU_GETOPT_PREFIX="$(brew --prefix gnu-getopt)"

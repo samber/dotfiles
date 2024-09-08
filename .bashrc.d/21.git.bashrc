@@ -72,3 +72,6 @@ function ci() {
     echo I\'m lost
   fi
 }
+
+# import git completion
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
