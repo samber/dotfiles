@@ -2,11 +2,6 @@
 # Dotfiles 🤘
 
 ```bash
-cd
-git clone http://github.com/samber/dotfiles.git .dotfiles
-```
-
-```bash
 brew update
 brew upgrade
 
