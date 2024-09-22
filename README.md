@@ -46,3 +46,63 @@ Missing:
 - /usr/local/bin
 - /usr/local/src
 - ~/.ssh
+
+## Apps
+
+- Alfred 4
+- AltTab
+- Be focused
+- BetterDictation
+- brave
+- caffeine
+- chromium
+- dashlane
+- dbeaver
+- discord
+- enpass
+- evernote
+- figma
+- filezilla
+- firefox
+- gimp
+- google chrome
+- google chrome canary
+- google drive
+- google earth
+- hidden bar
+- inyourface
+- iterm
+- karabiner
+- kubecontext
+- linear
+- loom
+- macdown
+- messenger
+- microsoft word/excel/powerpoint
+- microsoft teams
+- neat
+- notion
+- orbstack
+- pgadmin 4
+- poe
+- scroll reverser
+- slack
+- stats https://github.com/exelban/stats
+- suuntolink
+- teamviewer
+- todoist
+- tor browser
+- utm
+- vscode
+- vnc viewer
+- vlc
+- whatsapp
+- wireshark
+- xcode
+- xcodes
+- zoom
+
+## other
+
+- epson drivers
+
