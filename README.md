@@ -5,7 +5,7 @@
 brew update
 brew upgrade
 
-brew install ansible aria2 awscli azure-cli bash-completion ca-certificates cffi clever-tools clickhouse cloudflared cmake cocoapods composer coreutils csshx curl ffmpeg findutils gh git git-lfs glog gnupg gnutls gnu-sed go golangci-lint grep heroku htop hub hugo imagemagick jq kubectx kubernetes-cli kubeval libarchive libffi lz4 maven minikube moreutils mysql nancy nmap node nvm openjdk openssl openvpn packer parquet-cli pgbadger php pinentry poetry postgresql@14 pwgen python@3.11 rabbitmq rbenv redis restic rsync rtl_433 ruby s3cmd sbt scala scw snappy sqlite stripe terraform tfenv tflint tmux tree virtualenv wangle watch websocat wget youtube-dl yq zsh zsh-completion
+brew install ansible aria2 awscli azure-cli bash-completion ca-certificates cffi clever-tools clickhouse cloudflared cmake cocoapods composer coreutils csshx curl duckdb ffmpeg findutils gh git git-lfs glog gnupg gnutls gnu-sed go golangci-lint grep heroku htop hub hugo imagemagick jq kubectx kubernetes-cli kubeval libarchive libffi lz4 maven minikube moreutils mysql nancy nmap node nvm openjdk openssl openvpn packer parquet-cli pgbadger php pinentry poetry postgresql@14 pwgen python@3.11 rabbitmq rbenv redis restic rsync rtl_433 ruby s3cmd sbt scala scw snappy sqlite stripe terraform tfenv tflint tmux tree virtualenv wangle watch websocat wget youtube-dl yq zsh zsh-completion
 
 brew install --cask iterm2
 brew install --cask vlc
