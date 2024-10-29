@@ -1,0 +1,1 @@
+((copilot :fetcher github :repo "copilot-emacs/copilot.el" :branch "main" :files ("*.el")) (quelpa :repo "quelpa/quelpa" :fetcher github) (quelpa-use-package :fetcher git :url "https://github.com/quelpa/quelpa-use-package.git"))

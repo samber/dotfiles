@@ -1,2 +1,4 @@
 02.secret.bashrc
 .emacs.d/auto-save-list/
+.emacs.d/.cache/
+.emacs.d/network-security.data

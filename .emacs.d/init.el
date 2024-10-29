@@ -19,3 +19,4 @@
 
 (load-file "~/.emacs.d/functions.el")
 (load-file "~/.emacs.d/key-binding.el")
+(load-file "~/.emacs.d/copilot.el")
