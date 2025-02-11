@@ -108,3 +108,8 @@ autoload bashcompinit && bashcompinit
 #bindkey -e
 #bindkey '\e\e[C' forward-word
 #bindkey '\e\e[D' backward-word
+
+
+# stripe
+# fpath=(~/.stripe $fpath)
+# autoload -Uz compinit && compinit -i
