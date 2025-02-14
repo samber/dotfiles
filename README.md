@@ -2,10 +2,21 @@
 # Dotfiles 🤘
 
 ```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/samber/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 brew update
 brew upgrade
 
-brew install ansible aria2 awscli azure-cli bash-completion ca-certificates cffi clever-tools clickhouse cloudflared cmake cocoapods composer coreutils csshx curl duckdb ffmpeg findutils gh git git-lfs glog gnupg gnutls gnu-sed go golangci-lint grep heroku htop hub hugo imagemagick jq kubectx kubernetes-cli kubeval libarchive libffi lz4 maven minikube moreutils mysql nancy nmap node nvm openjdk openssl openvpn packer parquet-cli pgbadger php pinentry poetry postgresql@14 pwgen python@3.11 rabbitmq rbenv redis restic rsync rtl_433 ruby s3cmd sbt scala scw snappy sqlite stripe terraform tfenv tflint tmux tree virtualenv wangle watch websocat wget youtube-dl yq zsh zsh-completion
+brew tap heroku/brew
+brew tap sonatype-nexus-community/nancy-tap
+brew tap CleverCloud/homebrew-tap
+brew tap Bearer/tap
+brew tap johanhaleby/kubetail
+
+brew install ansible aria2 awscli azure-cli bash-completion bearer ca-certificates clever-tools cffi clickhouse cloudflared cmake cocoapods composer coreutils csshx curl duckdb emacs ffmpeg findutils fzf gcc gdbm gh git git-lfs gitleaks glog gnupg gnutls gnu-sed gnu-tar gnu-getopt go goreleaser golangci-lint grep helm helmfile heroku htop hub hugo imagemagick jq k9s krew kubectx kubetail kubernetes-cli kubeval libarchive libffi lz4 maven minikube moreutils mysql nancy nmap node nvm openjdk openssl openvpn packer parquet-cli pgbadger php pinentry poetry postgresql@14 pwgen python@3.9 python@3.12 rabbitmq rbenv redis restic rsync rtl_433 ruby s3cmd sbt scala scw snappy sqlite stern stripe terraform tfenv tflint tmux tree virtualenv wangle watch websocat wget youtube-dl yq zsh zsh-completion
 
 brew install --cask iterm2
 brew install --cask vlc
@@ -13,6 +24,7 @@ brew install --cask vlc
 
 ```bash
 npm install -g wscat react-native hest ts-node typescript yo http-proxy nodemon webpack gulp grunt
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 ```bash
@@ -106,3 +118,6 @@ Missing:
 
 - epson drivers
 
+## Migrate gpg keys
+
+https://gist.github.com/Killeroid/6361944d0694e474fb94cc42a3b119d1
