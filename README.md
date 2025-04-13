@@ -53,6 +53,10 @@ aws configure
 docker login
 ```
 
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
 Missing:
 
 - /usr/local/bin
